@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.forezp</groupId>
-	<artifactId>service-ribbon</artifactId>
+	<artifactId>service-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>service-ribbon</name>
+	<name>service-zuul</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -26,12 +26,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-		</dependency>
-		<!-- hystrix依赖 -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
 	</dependencies>
 

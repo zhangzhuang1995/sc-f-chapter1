@@ -17,6 +17,13 @@
 	<modules>
 		<module>eureka-server-demo</module>
 		<module>service-hi</module>
+		<module>service-feign</module>
+		<module>service-hello</module>
+		<module>service-ribbon</module>
+		<module>service-zuul</module>
+		<module>config-server</module>
+		<module>config-client</module>
+		<module>eureka-server-config</module>
 	</modules>
 
 	<properties>

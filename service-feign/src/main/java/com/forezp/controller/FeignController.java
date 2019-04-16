@@ -16,10 +16,10 @@ public class FeignController {
     FeignServiceHi feignServiceHi;
 
     /**
-     * localhost:8765/feignHi?name=zhangsan
+     * localhost:8765/hi?name=zhangsan
      * feign整合了ribbon和Hystrix
      */
-    @RequestMapping("/feignHi")
+    @RequestMapping("/hi")
     public String sayHi(@RequestParam("name") String name) {
         return feignServiceHi.sayHiFromServiceHi(name);
     }

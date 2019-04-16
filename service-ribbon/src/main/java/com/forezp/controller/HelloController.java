@@ -14,6 +14,9 @@ public class HelloController {
     @Autowired
     HelloService helloService;
 
+    /**
+     * http://localhost:8764/hi?name=zhangsan
+     */
     @RequestMapping("/hi")
     public String hi(@RequestParam("name") String name) {
         return helloService.hiService(name);

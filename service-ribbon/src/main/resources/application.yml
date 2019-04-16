@@ -7,4 +7,4 @@ server:
   port: 8764
 spring:
   application:
-    name: server-ribbon
+    name: service-ribbon
