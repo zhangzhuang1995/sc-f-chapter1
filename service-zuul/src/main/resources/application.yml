@@ -9,10 +9,16 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
-#ÒÔ/api-a/ ¿ªÍ·µÄÇëÇó¶¼×ª·¢¸øservice-ribbon·şÎñ£»ÒÔ/api-b/¿ªÍ·µÄÇëÇó¶¼×ª·¢¸øservice-feign·şÎñ£»
+gateway:
+  auth: true #é‰´æƒå¼€å…³
+  auth.whilteList: /api-a/* #é‰´æƒç™½åå•
+
+
+
+#ä»¥/api-a/ å¼€å¤´çš„è¯·æ±‚éƒ½è½¬å‘ç»™service-ribbonæœåŠ¡ï¼›ä»¥/api-b/å¼€å¤´çš„è¯·æ±‚éƒ½è½¬å‘ç»™service-feignæœåŠ¡ï¼›
 #http://localhost:8769/api-a/hi?name=zhangsan
 #http://localhost:8769/api-b/hi?name=zhangsan
-#¶¼»á¿ªÆôÈÛ¶ÏºÍ¸ºÔØ¾ùºâ
+#éƒ½ä¼šå¼€å¯ç†”æ–­å’Œè´Ÿè½½å‡è¡¡
 zuul:
   routes:
     api-a:

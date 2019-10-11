@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 @EnableZuulProxy  //开启zuul功能
 public class ServiceZuulApplication {
 

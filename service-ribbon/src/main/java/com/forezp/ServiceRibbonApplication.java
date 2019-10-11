@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 @EnableEurekaClient
 @EnableHystrix  //添加@EnableHystrix注解开启Hystrix
 public class ServiceRibbonApplication {

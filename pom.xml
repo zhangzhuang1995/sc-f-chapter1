@@ -24,6 +24,8 @@
 		<module>config-server</module>
 		<module>config-client</module>
 		<module>eureka-server-config</module>
+		<module>service-lucy</module>
+		<module>eureka-server-demo</module>
 	</modules>
 
 	<properties>

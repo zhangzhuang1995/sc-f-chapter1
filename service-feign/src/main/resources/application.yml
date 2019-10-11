@@ -9,5 +9,5 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
-#FeignÊÇ×Ô´ø¶ÏÂ·Æ÷µÄ£¬ÔÚD°æ±¾µÄSpring CloudÖ®ºó£¬ËüÃ»ÓĞÄ¬ÈÏ´ò¿ª£¬ĞèÒªÔÚÅäÖÃÎÄ¼şÖĞÅäÖÃ´ò¿ªËü
+#Feignæ˜¯è‡ªå¸¦æ–­è·¯å™¨çš„ï¼Œåœ¨Dç‰ˆæœ¬çš„Spring Cloudä¹‹åï¼Œå®ƒæ²¡æœ‰é»˜è®¤æ‰“å¼€ï¼Œéœ€è¦åœ¨é…ç½®æ–‡ä»¶ä¸­é…ç½®æ‰“å¼€å®ƒ
 feign.hystrix.enabled: true
