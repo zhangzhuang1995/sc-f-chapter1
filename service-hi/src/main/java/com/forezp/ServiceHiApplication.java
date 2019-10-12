@@ -26,9 +26,9 @@ import java.util.HashMap;
 public class ServiceHiApplication {
 
     /**
-     * localhost:8762/hystrix
-     * 访问地址 http://localhost:8762/actuator/hystrix.stream
-     * 监控仪表盘
+     * http://localhost:8762/hystrix 监控仪表盘
+     * http://localhost:8762/actuator/hystrix.stream 访问地址
+     * 访问之前需要先调一下http://localhost:8762/hi
      */
 
     public static void main(String[] args) {
@@ -41,13 +41,13 @@ public class ServiceHiApplication {
     @RequestMapping("/hi")
     @HystrixCommand(fallbackMethod = "hiError")
     public String home(@RequestParam(value = "name", defaultValue = "forezp") String name) {
+        if(name.equals("forezp")) {
+            throw new RuntimeException();
+        }
         return "hi " + name + " ,i am from port:" + port;
     }
 
     public String hiError(String name) {
-        HashMap<String,String> hashMap = new HashMap<>();
-        hashMap.put("1","2");
-        hashMap.get("1");
         return "hi," + name + ",sorry,error!";
     }
 
